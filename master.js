@@ -1,3 +1,4 @@
+// dot generator
 const rightDotContainer = document.querySelector(".content .right");
 const dotContainer = document.createElement("div");
     dotContainer.classList.add("dot-container");
@@ -13,9 +14,38 @@ const dotContainer = document.createElement("div");
         }
         dotContainer.appendChild(dotLine);
     }
-const zoom = document.createElement("div");
-zoom.classList.add("zoom");
-document.body.appendChild(zoom);
-window.addEventListener("resize", () => {
-    zoom.innerHTML = `${window.innerWidth} x ${window.innerHeight}`;
+// const zoom = document.createElement("div");
+// zoom.classList.add("zoom");
+// document.body.appendChild(zoom);
+// window.addEventListener("resize", () => {
+//     zoom.innerHTML = `${window.innerWidth} x ${window.innerHeight}`;
+// });
+
+// toggle menu
+let sidebarToggle = document.querySelector(".sidebar-icon");
+let sidebar = document.querySelector(".sidebar");
+
+sidebarToggle.onclick = function (e) {
+    e.stopPropagation();
+    sidebar.classList.toggle("active");
+};
+
+// Click Anywhere Outside Menu And Toggle Button
+document.addEventListener("click", (e) => {
+    if (!sidebar.contains(e.target) && e.target !== sidebarToggle) {
+        if (sidebar.classList.contains("active")) {
+            sidebar.classList.toggle("active");
+        }
+    }
+});
+
+let sidebarLinks = document.querySelectorAll(".sidebar .first a");
+let sidebarLinkListItems = document.querySelectorAll(".sidebar .first li");
+sidebarLinks.forEach((link) => {
+    link.addEventListener("click", (s) => {
+        sidebarLinkListItems.forEach((e) => {
+            e.classList.remove("active");
+        });
+        link.parentElement.classList.add("active");    
+    });
 });
