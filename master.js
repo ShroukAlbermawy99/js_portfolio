@@ -14,12 +14,13 @@ const dotContainer = document.createElement("div");
         }
         dotContainer.appendChild(dotLine);
     }
-// const zoom = document.createElement("div");
-// zoom.classList.add("zoom");
-// document.body.appendChild(zoom);
-// window.addEventListener("resize", () => {
-//     zoom.innerHTML = `${window.innerWidth} x ${window.innerHeight}`;
-// });
+// zoom
+const zoom = document.createElement("div");
+zoom.classList.add("zoom");
+document.body.appendChild(zoom);
+window.addEventListener("resize", () => {
+    zoom.innerHTML = `${window.innerWidth} x ${window.innerHeight}`;
+});
 
 // toggle menu
 let sidebarToggle = document.querySelector(".sidebar-icon");
