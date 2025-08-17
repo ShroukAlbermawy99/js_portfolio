@@ -4,6 +4,8 @@
   --violet-color: #B86ADF;
   --black: #141313;
   --white: #FFFFFF;
+  --semi-bold: 600;
+  --medium: 500;
 }
 * {
   box-sizing: border-box;
@@ -25,13 +27,17 @@ ul {
 }
 .linear-gradient-b {
   background: linear-gradient(90deg, var(--violet-color) 0% , transparent ),
-              linear-gradient(90deg, var(--red-color) 48%, transparent),
-              linear-gradient(90deg, var(--orange-color)100%);
+                linear-gradient(90deg, var(--red-color) 48%, transparent),
+                linear-gradient(90deg, var(--orange-color) 100%);
 }
 .linear-gradient-c {
-  color: linear-gradient(90deg, var(--violet-color) 0% , transparent ),
+  background: linear-gradient(90deg, var(--violet-color) 0% , transparent ),
                 linear-gradient(90deg, var(--red-color) 48%, transparent),
                 linear-gradient(90deg, var(--orange-color)100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 .page {
   display: flex;
@@ -502,7 +508,8 @@ ul {
 .container .content .left .inside .info .info-head .p2 span {
   font-family: "Open Sans", sans-serif;
 }
-.container .content .left .inside .info button {
+/* .container .content .left .inside .info button { */
+.btn {
   width: 258px;
   justify-content: center;
   align-items: center;
@@ -521,27 +528,28 @@ ul {
   bottom: 0;
 }
 @media (max-width: 1920px) {
-    .container .content .left .inside .info button {
+    .btn {
         width: 220px;
         height: 44px;
         font-size: 14px;
     }
 }
 @media (max-width: 1600px) {
-    .container .content .left .inside .info button {
+    .btn {
         width: 152px;
         height: 33px;
         font-size: 12px;
     }
 }
 @media (max-width: 991px) {
-    .container .content .left .inside .info button {
+    .btn {
         width: 220px;
         height: 44px;
         font-size: 14px;
     }
 }
-.container .content .left .inside .info button .img-container {
+/* .container .content .left .inside .info .btn .img-container { */
+.img-container {
   width: 24px;
   height: 24px;
   display: flex;
@@ -549,23 +557,24 @@ ul {
   align-items: center;
 }
 @media (max-width: 1920px) {
-    .container .content .left .inside .info button .img-container {
+    .img-container {
         width: 20px;
         height: 20px;
     }
 }
 @media (max-width: 1600px) {
-    .container .content .left .inside .info button .img-container {
+    .img-container {
         width: 14px;
         height: 14px;
     }
 }
-.container .content .left .inside .info button img {
+/* .container .content .left .inside .info .btn .btn-img { */
+.btn-img {
     width: 14.4px;
     height: 14.4px;
 }
 @media (max-width: 1920px) {
-    .container .content .left .inside .info button img {
+    .btn-img {
         width: 10px;
         height: 10px;
     }
@@ -592,11 +601,14 @@ ul {
         flex-direction: column;
     }
 }
-.container .content .left .inside .contact-info .contact {
+.contact {
+    align-items: center;
+    /* justify-content: center; */
     display: flex;
+}
+.container .content .left .inside .contact-info .contact {
     flex-direction: row;
     gap: 6px; /*8*/
-    align-items: center;
 }
 @media (max-width: 1920px) {
     .container .content .left .inside .contact-info .contact {
@@ -608,11 +620,13 @@ ul {
         gap: 3px;
     }
 }
-.container .content .left .inside .contact-info img {
+/* .container .content .left .inside .contact-info .contact-img { */
+.contact-img {
     width: 20.65px;
     height: 20.65px;
 }
-.container .content .left .inside .contact-info a {
+/* .container .content .left .inside .contact-info .contact-link { */
+.contact-link {
     font-style: italic;
     font-size: 18px;
     font-family: "IBM Plex Sans";
