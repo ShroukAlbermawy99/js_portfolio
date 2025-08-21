@@ -1,0 +1,355 @@
+.content .main-container {
+    position: relative;
+    left: 286px;
+}
+@media(max-width: 1920px) {
+    .content .main-container {
+        left: 222px;
+    }
+}
+@media(max-width: 1600px) {
+    .content .main-container {
+        left: 150px;
+    }
+}
+@media(max-width: 1440px) {
+    .content .main-container {
+        left: 110px;
+    }
+}
+@media(max-width: 1199px) {
+    .content .main-container {
+        left: 100px;
+    }
+}
+@media(max-width: 991px) {
+    .content .main-container {
+        left: 0;
+        width: 500px;
+    }
+}
+@media(max-width: 768px) {
+    .content .main-container {
+        left: 20px;
+        
+    }
+}
+.content .title {
+    position: absolute;
+    left: 103px;
+    top: 80px;
+    margin: 0;
+    font-family: "IBM Plex Sans";
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@media(max-width: 1600px) {
+    .content .title {
+        gap: 12.5px;
+    }
+}
+@media(max-width: 768px) {
+    .content .title {
+        gap: 16px;
+    }
+}
+.content .title p {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: var(--semi-bold);
+    margin: 0;
+}
+@media(max-width: 1600px) {
+    .content .title p {
+        font-size: 14px;
+    }
+}
+/* @media(max-width: 768px) {
+    .content .title p {
+        font-size: 14px;
+    }
+} */
+.content .title h4 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: bold;
+    margin: 0;
+}
+@media(max-width: 1600px) {
+    .content .title h4 {
+        font-size: 37.5px;
+    }
+}
+@media(max-width: 768px) {
+    .content .title h4 {
+        font-size: 40px;
+    }
+}
+.content .box {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 224px;
+    left: 103px;
+}
+.content .sections {
+    position: relative;
+    width: 1235px;
+    height: 644px;
+    list-style: disc;
+    margin: 0;
+}
+.sections .section {
+    height: 80px;
+    width: 1235px;
+    font-family: "IBM Plex Sans";
+    list-style: disc;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #14131333;
+    display: flex;
+    flex-direction: row;
+}
+@media(max-width: 1600px) {
+    .sections .section {
+        margin-bottom: 31.2px;
+        width: 1057px;
+    }
+}
+@media(max-width: 1440px) {
+    .sections .section {
+        width: 940px;
+    }
+}
+@media(max-width: 1199px) {
+    .sections .section {
+        width: 790px;
+    }
+}
+@media(max-width: 1024px) {
+    .sections .section {
+        margin-bottom: 31.2px;
+        width: 740px;
+    }
+}
+@media(max-width: 991px) {
+    .sections .section {
+        width: 690px;
+    }
+}
+@media(max-width: 834px) {
+    .sections .section {
+        width: 640px;
+    }
+}
+@media(max-width: 768px) {
+    .sections .section {
+        margin-bottom: 40px;
+        width: 445px;
+        height: 150px;
+    }
+}
+.box .sections .section.open {
+    height: 284px;
+}
+@media(max-width: 1600px) {
+    .box .sections .section.open {
+        /* height: 221.52px; */
+        height: 290px;
+    }
+}
+@media(max-width: 768px) {
+    .box .sections .section.open {
+        height: 410px;
+        text-overflow: ellipsis;
+    }
+}
+.sections .section h6 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    color: var(--black);
+    margin: 0;
+
+}
+@media(max-width: 1600px) {
+    .sections .section h6 {
+        font-size: 25px;
+    }
+}
+@media(max-width: 768px) {
+    .sections .section h6 {
+        position: absolute;
+        left: 0;
+        font-size: 32px;
+    }
+}
+.box .medium {
+    color: rgba(var(--black), 0.8);
+    left: 575px;
+    position: absolute;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+}
+@media(max-width: 1600px) {
+    .box .medium {
+        left: 400px;
+        /* height: 62.4px; */
+        font-size: 12.5px;
+    }
+}
+@media(max-width: 1440px) {
+    .box .medium {
+        left: 350px;
+    }
+}
+@media(max-width: 1199px) {
+    .box .medium {
+        left: 270px;
+    }
+}
+@media(max-width: 1024px) {
+    .box .medium {
+        left: 250px;
+    }
+}
+@media(max-width: 991px) {
+    .box .medium {
+        left: 200px;
+    }
+}
+@media(max-width: 834px) {
+    .box .medium {
+        left: 150px;
+    }
+}
+@media(max-width: 768px) {
+    .box .medium {
+        position: relative;
+        top: 60px;
+        left: 0;
+        font-size: 16px;
+    }
+}
+.box .section.open .medium {
+    height: 284px;
+}
+@media(max-width: 1600px) {
+    .box .section.open .medium {
+        /* height: 221.52px; */
+        height: 284;
+    }
+}
+.section .medium p {
+    margin: 0;
+}
+.box .section.open .medium p {
+    margin: 30px 0 0 0;
+}
+@media(max-width: 1600px) {
+    .box .section.open .medium p {
+        margin: 65px 0 0 0;
+    }
+}
+/* @media(max-width: 768px) {
+    .box .section.open .medium p {
+        margin: 65px 0 0 0;
+    }
+} */
+.medium .img-container {
+    display: none;
+    width: 430px;
+    height: 180px;
+}
+@media(max-width: 1600px) {
+    .medium .img-container {
+        width: 335.4px;
+        height: 140.4px;
+    }
+}
+@media(max-width: 768px) {
+    .medium .img-container {
+        width: 430px;
+        height: 180px;
+    }
+}
+.box .section.open .medium .img-container {
+    display: block;
+    position: relative;
+}
+.box .section button {
+    left: 1195px;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+}
+@media(max-width: 1600px) {
+    .box .section button {
+        width: 31.2px;
+        height: 31.2px;
+        left: 1020px;
+    }
+}
+@media(max-width: 1440px) {
+    .box .section button {
+        left: 900px;
+    }
+}
+@media(max-width: 1199px) {
+    .box .section button {
+        left: 750px;
+    }
+}
+@media(max-width: 1024px) {
+    .box .section button {
+        left: 700px;
+    }
+}
+@media(max-width: 991px) {
+    .box .section button {
+        left: 650px;
+    }
+}
+@media(max-width: 834px) {
+    .box .section button {
+        left: 600px;
+    }
+}
+@media(max-width: 768px) {
+    .box .section button {
+        left: 395px;
+        width: 40px;
+        height: 40px;
+    }
+}
+.box .section .open-btn {
+    display: none;
+}
+.box .section .open-btn.active {
+    display: block;
+}
+.box .section .close-btn {
+    display: none;
+}
+.box .section .close-btn.active {
+    display: block;
+    margin-bottom: 204px;
+}
+.container .sidebar {
+    height: 1520px;
+}
+.zoom {
+    position: absolute;
+    left: 900px;
+    top: 10px;
+}

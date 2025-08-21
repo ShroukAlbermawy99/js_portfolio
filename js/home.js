@@ -1,3 +1,4 @@
+/* home page */
 // dot generator
 const rightDotContainer = document.querySelector(".content .right");
 const dotContainer = document.createElement("div");
@@ -50,3 +51,4 @@ sidebarLinks.forEach((link) => {
         link.parentElement.classList.add("active");    
     });
 });
+/* Services Page */
