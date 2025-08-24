@@ -1,0 +1,28 @@
+// toggle menu
+let sidebarToggle = document.querySelector(".sidebar-icon");
+let sidebar = document.querySelector(".sidebar");
+
+sidebarToggle.onclick = function (e) {
+    e.stopPropagation();
+    sidebar.classList.toggle("active");
+};
+
+// Click Anywhere Outside Menu And Toggle Button
+document.addEventListener("click", (e) => {
+    if (!sidebar.contains(e.target) && e.target !== sidebarToggle) {
+        if (sidebar.classList.contains("active")) {
+            sidebar.classList.toggle("active");
+        }
+    }
+});
+
+let sidebarLinks = document.querySelectorAll(".sidebar .first a");
+let sidebarLinkListItems = document.querySelectorAll(".sidebar .first li");
+sidebarLinks.forEach((link) => {
+    link.addEventListener("click", (s) => {
+        sidebarLinkListItems.forEach((e) => {
+            e.classList.remove("active");
+        });
+        link.parentElement.classList.add("active");    
+    });
+});

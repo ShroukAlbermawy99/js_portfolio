@@ -1,0 +1,218 @@
+.content .main-container {
+    position: relative;
+    left: 286px;
+}
+@media(max-width: 1920px) {
+    .content .main-container {
+        left: 222px;
+    }
+}
+@media(max-width: 1600px) {
+    .content .main-container {
+        left: 150px;
+    }
+}
+@media(max-width: 1440px) {
+    .content .main-container {
+        left: 110px;
+    }
+}
+@media(max-width: 1199px) {
+    .content .main-container {
+        left: 65px;
+        top: -10px;
+    }
+}
+@media(max-width: 1024px) {
+    .content .main-container {
+        height: 1250px;
+    }
+}
+@media(max-width: 991px) {
+    .content .main-container {
+        left: 0;
+        width: 500px;
+    }
+}
+@media(max-width: 768px) {
+    .content .main-container {
+        left: 80px;
+        height: 1700px;
+        overflow: hidden;
+    }
+}
+
+.content .title {
+    position: absolute;
+    left: 501px;
+    top: 100px;
+    margin: 0;
+    font-family: "IBM Plex Sans";
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+@media(max-width: 1600px) {
+    .content .title {
+        gap: 12.5px;
+        top: 80px;
+        left: 431.5px;
+    }
+}
+@media(max-width: 1024px) {
+    .content .title {
+        width: 280px;
+        left: 260px;
+    }
+}
+@media(max-width: 768px) {
+    .content .title {
+        gap: 16px;
+        left: 95px;
+    }
+}
+.content .title p {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: var(--semi-bold);
+    margin: 0;
+}
+@media(max-width: 1600px) {
+    .content .title p {
+        font-size: 14px;
+    }
+}
+.content .title h4 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: bold;
+    margin: 0;
+}
+@media(max-width: 1600px) {
+    .content .title h4 {
+        font-size: 37.5px;
+    }
+}
+.content .medium {
+    display: flex;
+    flex-direction: row;
+    gap: 86px;
+    top: 244px;
+    left: 114px;
+    position: relative;
+}
+@media (max-width: 1600px) {
+    .content .medium {
+        top: 210px;
+    }
+}
+@media (max-width: 1199px) {
+    .content .medium {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+@media (max-width: 1024px) {
+    .content .medium {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+@media (max-width: 768px) {
+    .content .medium {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.content .medium .box {
+    width: 316px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+@media (max-width: 1600px) {
+    .content .medium .box {
+        width: 245.7px;
+    }
+}
+.content .medium .box .img-container {
+    width: 315px;
+    height: 260px;
+    position: relative;
+}
+@media(max-width: 1600px) {
+    .content .medium .box .img-container img {
+        width: 245.7px;
+        height: 202.8px;
+        left: 0;
+        position: absolute;
+    }
+}
+.medium .box .title1 p {
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: var(--semi-bold);
+    margin: 0 0 16px 0;
+    font-style: italic;
+}
+@media(max-width: 1600px) {
+    .medium .box .title1 p {
+        font-size: 14px;
+    }
+}
+@media(max-width: 1440px) {
+    .medium .box .first .title1 p {
+        margin: 0;
+    }
+}
+.medium .box .title1 h5 {
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 24px 0;
+    width: fit-content;
+}
+@media(max-width: 1600px) {
+    .medium .box .title1 h5 {
+        font-size: 18.75px;
+    }
+}
+@media(max-width: 1440px) {
+    .medium .box .title1 h5 {
+        margin: 10px 0 0 0;
+        font-size: 16.88px;
+    }
+}
+.btn {
+    left: 575px;
+    top: 729px;
+    width: 199px;
+}
+@media (max-width: 1920px) {
+    .btn{
+        width: 160.22px;
+    }
+}
+@media (max-width: 1600px) {
+    .btn{
+        top: 660px;
+        left: 475px;
+        width: 155.22px;
+    }
+}
+@media (max-width: 1024px) {
+    .btn{
+        top: 1100px;
+        left: 305px;
+    }
+}
+@media (max-width: 768px) {
+    .btn{
+        top: 1550px;
+        left: 165px;
+    }
+}

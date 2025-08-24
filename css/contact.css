@@ -1,0 +1,353 @@
+.content .main-container {
+    position: relative;
+    left: 286px;
+}
+@media(max-width: 1920px) {
+    .content .main-container {
+        left: 222px;
+    }
+}
+@media(max-width: 1600px) {
+    .content .main-container {
+        left: 150px;
+    }
+}
+@media(max-width: 1440px) {
+    .content .main-container {
+        left: 110px;
+    }
+}
+@media(max-width: 1199px) {
+    .content .main-container {
+        left: 100px;
+    }
+}
+@media(max-width: 991px) {
+    .content .main-container {
+        left: 0;
+        width: 500px;
+    }
+}
+@media(max-width: 768px) {
+    .content .main-container {
+        left: 100px;
+        height: 1200px;
+        width: 450px;
+        overflow-x: hidden;
+    }
+    .page {
+        overflow-x: hidden;        
+        width: 650px;
+    }
+}
+@media(max-width: 480px) {
+    .content .main-container {
+        /* left: 70px; */
+        width: 500px;
+    }
+}
+.container .content .left {
+    width: 433px;
+    height: 472px;
+    left: 115px;
+    position: absolute;
+    top: 244px;
+    font-family: "IBM Plex Sans";
+    color: var(--black);
+}
+@media(max-width: 1600px) {
+    .container .content .left {
+        width: 337.74px;
+        height: 368px;
+        top: 190.32px;
+    }
+}
+.content .title {
+    position: absolute;
+    margin: 0;
+    font-family: "IBM Plex Sans";
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+@media(max-width: 1600px) {
+    .content .title {
+        gap: 12.5px;
+    }
+}
+@media(max-width: 768px) {
+    .content .title {
+        gap: 16px;
+    }
+}
+.content .title p {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: var(--semi-bold);
+    margin: 0;
+}
+@media(max-width: 1600px) {
+    .content .title p {
+        font-size: 14px;
+    }
+}
+.content .title h4 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: bold;
+    margin: 0;
+}
+@media(max-width: 1600px) {
+    .content .title h4 {
+        font-size: 37.5px;
+    }
+}
+@media(max-width: 768px) {
+    .content .title h4 {
+        font-size: 40px;
+    }
+}
+.left .address {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -3%;
+    margin-top: 126px;
+}
+@media(max-width: 1600px) {
+    .left .address {
+        font-size: 12.48px;
+        margin-top: 98.28px;
+    }
+}
+.left a {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 40px;
+    color: var(--black);
+}
+@media(max-width: 1600px) {
+    .left a {
+        font-size: 19.5px;
+    }
+}
+.left .phone {
+    top: 268px;
+    position: absolute;
+}
+@media(max-width: 1600px) {
+    .left .phone {
+        top: 209.04px;
+    }
+}
+.left .email {
+    top: 328px;
+    position: absolute;
+    left: 0;
+}
+@media(max-width: 1600px) {
+    .left .email {
+        top: 255.84px;
+    }
+}
+.left .contacts {
+    bottom: 0;
+    width: 378px;
+    height: 24px;
+    gap: 24px;
+    display: flex;
+    position: absolute;
+}
+@media(max-width: 1600px) {
+    .left .contacts {
+        width: 294.84px;
+        height: 18px;
+        gap: 18.72px;
+    }
+}
+.left .contacts a {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -3%;
+}
+@media(max-width: 1600px) {
+    .left .contacts a {
+        font-size: 12.48px;
+    }
+}
+.container .content .right {
+    display: flex;
+    flex-direction: column;
+    left: 574px;
+    position: relative;
+    top: 212px;
+    width: 775px;
+    height: 536px;
+}
+@media(max-width: 1600px) {
+    .container .content .right {
+        left: 447.72px;
+        width: 604.5px;
+        height: 418px;
+        top: 165.36px;
+    }
+}
+@media(max-width: 1199px) {
+    .container .content .right {
+        left: 447.72px;
+        width: 302.25px;
+        height: 491px;
+        top: 165.36px;
+    }
+}
+@media(max-width: 768px) {
+    .container .content .right {
+        top: 650px;
+        left: 115px;
+    }
+}
+.container .content .right .inner {
+    width: 605px;
+    height: 408px;
+    top: 64px;
+    left: 85px;
+    position: absolute;
+    font-family: "IBM Plex Sans";
+    color: white;
+}
+@media(max-width: 1600px) {
+    .container .content .right .inner {
+        left: 66.3px;
+        width: 471.9px;
+        height: 318px;
+        top: 50px;
+    }
+}
+@media(max-width: 1199px) {
+    .container .content .right .inner {
+        height: 391px;
+        width: 235.95px;
+        left: 33.15px;
+    }
+}
+.inner h5 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: bold;
+    margin: 0;
+}
+@media(max-width: 1600px) {
+    .inner h5 {
+        font-size: 31.2px;
+    }
+}
+.content .right .contact {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 80%;
+    font-weight: 500px;
+    border: none;
+    background: none;
+}
+@media(max-width: 1600px) {
+    input {
+        font-size: 12.48px;
+    }
+}
+.content .right .contact .info1 {
+    display: flex;
+    gap: 45px;
+    margin-top: 50px;
+}
+@media(max-width: 1600px) {
+    .content .right .contact .info1 {
+        gap: 35.1px;
+        margin-top: 39px;
+    }
+}
+@media(max-width: 1199px) {
+    .content .right .contact .info1 {
+        flex-direction: column;
+        margin-bottom: 39px;
+        left: 0;
+        position: absolute;
+    }
+}
+.info1 .name,
+.info1 .email-input {
+    width: 280px;
+    height: 34px;
+    border-bottom: 1px solid white;
+}
+@media(max-width: 1600px) {
+    .info1 .name,
+    .info1 .email-input {
+        width: 218.4px;
+        height: 26px;
+    }
+}
+.right .inner .message {
+    border-bottom: 1px solid white;
+    height: 84px;
+    position: absolute;
+    left: 0;
+    top: 188px;
+    width: 100%;
+}
+@media(max-width: 1600px) {
+    .right .inner .message {
+        height: 65.52px;
+        top: 146.64px;
+    }
+}
+@media(max-width: 1199px) {
+    .right .inner .message {
+        top: 219.64px;
+        width: 218.4px;
+    }
+}
+.right .inner .upload {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 288px;
+}
+@media(max-width: 1600px) {
+    .right .inner .upload {
+        top: 224.64px;
+    }
+}
+@media(max-width: 1199px) {
+    .right .inner .upload {
+        top: 297.64px;
+    }
+}
+.right .inner .upload input {
+    opacity: 0;
+}
+.btn {
+    width: 211px;
+    bottom: 0;
+    left: 0;
+}
+@media(max-width: 1600px) {
+    .btn {
+        width: 164.58px;
+    }
+}
+/* @media(max-width: 1199px) {
+    .btn {
+        bottom: 0;
+    }
+} */
+.zoom {
+    position: absolute;
+    left: 900px;
+    top: 10px;
+}

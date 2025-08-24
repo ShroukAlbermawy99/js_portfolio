@@ -15,7 +15,7 @@ const dotContainer = document.createElement("div");
         }
         dotContainer.appendChild(dotLine);
     }
-// zoom
+
 const zoom = document.createElement("div");
 zoom.classList.add("zoom");
 document.body.appendChild(zoom);
@@ -24,8 +24,8 @@ window.addEventListener("resize", () => {
 });
 
 // toggle menu
-let sidebarToggle = document.querySelector(".sidebar-icon");
-let sidebar = document.querySelector(".sidebar");
+const sidebarToggle = document.querySelector(".sidebar-icon");
+const sidebar = document.querySelector(".sidebar");
 
 sidebarToggle.onclick = function (e) {
     e.stopPropagation();
@@ -41,8 +41,8 @@ document.addEventListener("click", (e) => {
     }
 });
 
-let sidebarLinks = document.querySelectorAll(".sidebar .first a");
-let sidebarLinkListItems = document.querySelectorAll(".sidebar .first li");
+const sidebarLinks = document.querySelectorAll(".sidebar .first a");
+const sidebarLinkListItems = document.querySelectorAll(".sidebar .first li");
 sidebarLinks.forEach((link) => {
     link.addEventListener("click", (s) => {
         sidebarLinkListItems.forEach((e) => {
@@ -51,4 +51,3 @@ sidebarLinks.forEach((link) => {
         link.parentElement.classList.add("active");    
     });
 });
-/* Services Page */

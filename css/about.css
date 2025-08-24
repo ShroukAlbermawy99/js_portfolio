@@ -4,7 +4,7 @@
 .main-container {
     display: flex;
     flex-direction: column;
-    left: 286px;
+    left: 285px;
     position: relative;
 }
 @media (max-width: 1600px) {
@@ -414,26 +414,30 @@
 }
 .second-content {
     width: 1302px;
-    left: -15px;
     position: relative;
     display: flex;
     height: 629px;
     flex-direction: row;
 }
+@media (max-width: 1920px) {
+    .second-content {
+        left: -65px;
+    }
+}
 @media (max-width: 1600px) {
     .second-content {
-        left: 15px;
+        left: 30px;
     }
 }
 @media (max-width: 1440px) {
     .second-content {
         width: 911.4px;
-        left: -15px;
+        left: 0;
     }
 }
 @media (max-width: 1200px) {
     .second-content {
-        left: 55px;
+        left: 70px;
         width: 830px;
     }
 }
